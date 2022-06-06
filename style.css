@@ -17,8 +17,30 @@ body{
     font-size: 36px;
 }
 
+.todoListPannel h1{
+    background-color: cyan;
+    width: 90%;
+    height: 70px;
+    margin: 20px auto;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+.todoListPannel p{
+    background-color: rgb(99, 9, 64);
+    color: white;
+    width: 70%;
+    height: 70px;
+    margin: 20px auto;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+
 #todoList li {
-    border: 1px solid darkgray;
+    border: none;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    background-color: #555454;
     width: 75%;
     border-radius: 5px;
     padding-left: 10px;
@@ -33,16 +55,34 @@ body{
     width: 90%;
 }
 
-#addTodo, #delete{
-    margin: 20px;
-    padding: 10px;
-    
+#addTodo {
+    background-color: blue;
+    color: white;
 }
 
+#delete-btn {
+    background-color: red;
+    color: white;
+}
+#addTodo, #delete-btn{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+span {
+    color: #777719;
+}
 
 .todoListPannel .button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 50%;
+}
+
+#addTodo:hover, #delete-btn:hover{
+    transform: scale(0.98);
 }

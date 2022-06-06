@@ -1,7 +1,7 @@
 let addTodo = document.getElementById("addTodo");
 let todoList = document.getElementById("todoList");
 let todoItem = document.getElementById("todoItem");
-let erase = document.getElementById("delete");
+let erase = document.getElementById("delete-btn");
 
 addTodo.onclick = function() {
     todoItem.value; 
@@ -13,5 +13,11 @@ addTodo.onclick = function() {
         todoItem.value = "";
     }
 }
+
+function deleteBtn() {
+todoList.lastElementChild.remove();
+}
+
+
 
 

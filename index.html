@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Todo List</title>
 </head>
-<body>
-
-
-       
-
+<body> 
     <section class="todoListPannel">
-        <h1>Welcome to AY-Khalid TodoList</h1>
+        <h1>Welcome to <span>AY-Khalid</span>  TodoList</h1>
         <p>Add your todolist Items</p>
         <ol id="todoList">
-            <li>Observe Prayers</li>
+
         </ol>
         <label for="todoItem">
         <input type="text" id="todoItem" name="todoItem" placeholder="Enter Todolist Item">
     </label>
 <br>
 <div class="button">
-<button id="delete">Delete</button>
+<button id="delete-btn" onclick="deleteBtn()">Delete</button>
 <button id="addTodo">Add</button>
 </div>
     </section>
 
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
