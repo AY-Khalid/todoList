@@ -1,12 +1,14 @@
 body{
-    margin: 0 auto;
-    width: 50%;
     background-color: rgb(12, 12, 58);
+    width: 90%;
+    margin: 0 auto;
 }
 
 .todoListPannel{
     border: 2px solid rgb(28, 100, 148);
+    margin: 0 auto;
     margin-top: 50px;
+    width: 75%;
     background-color: white;
     border-radius: 30px;
     box-shadow: 0 3px 20px rgb(64, 61, 61);
@@ -20,18 +22,16 @@ body{
 .todoListPannel h1{
     background-color: cyan;
     width: 90%;
-    height: 70px;
     margin: 20px auto;
-    padding-top: 20px;
+    padding: 20px 10px;
     border-radius: 10px;
 }
 .todoListPannel p{
     background-color: rgb(99, 9, 64);
     color: white;
     width: 70%;
-    height: 70px;
     margin: 20px auto;
-    padding-top: 20px;
+    padding: 20px 10px 20px 10px;
     border-radius: 10px;
 }
 
@@ -79,10 +79,23 @@ span {
 .todoListPannel .button {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 50%;
 }
 
 #addTodo:hover, #delete-btn:hover{
     transform: scale(0.98);
+}
+
+@media (max-width: 670px) {
+    .todoListPannel .button{
+        display: flex;
+       flex-wrap: wrap-reverse;
+    }
+    .todoListPannel h1, .todoListPannel p {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
 }
